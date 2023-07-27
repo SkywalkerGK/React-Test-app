@@ -1,6 +1,10 @@
 import React , { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AppFooter from './AppFooter';
+import AppContent from './AppContent';
+import AppHeader from './AppHeader';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 
 
@@ -8,11 +12,9 @@ class App extends Component {
   render(){
     return( 
     <div className='app'>
-      <div>
-        <h1>React Running</h1>
-      </div>
+      <AppHeader title='Cool App!' />
+      <AppContent />
       <AppFooter />
-      
     </div>
     );
   }
