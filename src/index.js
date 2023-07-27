@@ -10,9 +10,14 @@ import './index.css';
 
 class App extends Component {
   render(){
+    const myProps = {
+      title: 'My Cool App',
+      subject: 'My Subject',
+      favourite_color: 'Red',
+    }
     return( 
     <div className='app'>
-      <AppHeader title='Cool App!' />
+      <AppHeader {...myProps} />
       <AppContent />
       <AppFooter />
     </div>
